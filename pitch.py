@@ -13,7 +13,14 @@ def name(val):
     }[val // 7]
 
 
+INTERVAL_1 = ("d" * 7 + "m" * 4 + "P" * 3 + "M" * 4 + "A" * 7)
+INTERVAL_2 = "2637415" * 4
+
+
 def interval_name(val):
-    x = "dddddddmmmmPPPMMMMAAAAAAA"
-    y = "2637415263741526374152637"
-    return x[val + 12] + y[val + 12]
+    return INTERVAL_1[val + 12] + INTERVAL_2[val + 12]
+
+
+def interval_value(name):
+    s = INTERVAL_1.find(name[0])
+    return s + INTERVAL_2[s:].index(name[1]) - 12

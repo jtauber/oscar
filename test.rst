@@ -177,3 +177,10 @@ Diminished
 
 >>> interval_above_C("Gb")
 (-6, 'd5')
+
+Interval Names to Values
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+>>> from pitch import interval_value
+>>> all(i == interval_value(interval_name(i)) for i in range(-12, 13))
+True
