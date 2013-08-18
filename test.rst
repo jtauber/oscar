@@ -76,3 +76,77 @@ The modes are lists of circle-of-fifth intervals from the tonic:
 
 >>> modes.LOCRIAN
 [0, -5, -3, -1, -6, -4, -2]
+
+
+Intervals
+---------
+
+>>> def interval_above_C(pitch): return value(pitch) - value("C")
+
+Perfect
+~~~~~~~
+
+>>> interval_above_C("F")
+-1
+
+>>> interval_above_C("C")
+0
+
+>>> interval_above_C("G")
+1
+
+Major
+~~~~~
+
+>>> interval_above_C("D")
+2
+
+>>> interval_above_C("A")
+3
+
+>>> interval_above_C("E")
+4
+
+>>> interval_above_C("B")
+5
+
+Minor
+~~~~~
+
+>>> interval_above_C("Db")
+-5
+
+>>> interval_above_C("Ab")
+-4
+
+>>> interval_above_C("Eb")
+-3
+
+>>> interval_above_C("Bb")
+-2
+
+
+Augmented
+~~~~~~~~~
+
+>>> interval_above_C("F#")
+6
+
+>>> interval_above_C("C#")
+7
+
+>>> interval_above_C("G#")
+8
+
+
+Diminished
+~~~~~~~~~~
+
+>>> interval_above_C("Fb")
+-8
+
+>>> interval_above_C("Cb")
+-7
+
+>>> interval_above_C("Gb")
+-6
