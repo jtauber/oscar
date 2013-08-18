@@ -1,3 +1,9 @@
+Oscar
+=====
+
+
+Numerical Pitch values
+----------------------
 
 Convert letter+modifer pitch to numerical value based on circle-of-fifths:
 
@@ -30,6 +36,9 @@ Convert circle-of-fifths-based numerical pitch to letter+modifier string:
 'Abb'
 >>> name(16)
 'Gx'
+
+Modes
+-----
 
 Get the notes in the D Locrian scale:
 
