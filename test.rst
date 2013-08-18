@@ -198,3 +198,14 @@ You can also add two intervals to get a third:
 
 >>> interval_name(interval_value("M3") + interval_value("m3"))
 'P5'
+
+The inversion of an interval is just the negative of it:
+
+>>> interval_name(-interval_value("P4"))
+'P5'
+
+>>> interval_name(-interval_value("M3"))
+'m6'
+
+>>> interval_name(-interval_value("A2"))
+'d7'
