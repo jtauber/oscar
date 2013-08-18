@@ -138,9 +138,32 @@ Augmented
 >>> interval_above_C("G#")
 8
 
+>>> interval_above_C("D#")
+9
+
+>>> interval_above_C("A#")
+10
+
+>>> interval_above_C("E#")
+11
+
+>>> interval_above_C("B#")
+12
 
 Diminished
 ~~~~~~~~~~
+
+>>> interval_above_C("Dbb")
+-12
+
+>>> interval_above_C("Abb")
+-11
+
+>>> interval_above_C("Ebb")
+-10
+
+>>> interval_above_C("Bbb")
+-9
 
 >>> interval_above_C("Fb")
 -8
