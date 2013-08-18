@@ -184,3 +184,13 @@ Interval Names to Values
 >>> from pitch import interval_value
 >>> all(i == interval_value(interval_name(i)) for i in range(-12, 13))
 True
+
+You can add intervals to pitches to get new pitches:
+
+>>> name(value("F#") + interval_value("m3"))
+'A'
+
+You can also add two intervals to get a third:
+
+>>> interval_name(interval_value("M3") + interval_value("m3"))
+'P5'
