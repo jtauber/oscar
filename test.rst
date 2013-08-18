@@ -39,3 +39,6 @@ Get the notes in the D Locrian scale:
 
 >>> print scale("D", modes.LOCRIAN)
 ['D', 'Eb', 'F', 'G', 'Ab', 'Bb', 'C']
+
+>>> print scale("C", modes.LYDIAN)
+['C', 'D', 'E', 'F#', 'G', 'A', 'B']
