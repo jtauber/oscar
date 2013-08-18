@@ -37,6 +37,9 @@ Convert circle-of-fifths-based numerical pitch to letter+modifier string:
 >>> name(16)
 'Gx'
 
+>>> [name(i) for i in range(-14, 21)]
+['Fbb', 'Cbb', 'Gbb', 'Dbb', 'Abb', 'Ebb', 'Bbb', 'Fb', 'Cb', 'Gb', 'Db', 'Ab', 'Eb', 'Bb', 'F', 'C', 'G', 'D', 'A', 'E', 'B', 'F#', 'C#', 'G#', 'D#', 'A#', 'E#', 'B#', 'Fx', 'Cx', 'Gx', 'Dx', 'Ax', 'Ex', 'Bx']
+
 Modes
 -----
 
