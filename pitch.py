@@ -10,4 +10,4 @@ def value(name):
 def name(val):
     return "FCGDAEB"[val % 7] + {
         -2: "bb", -1: "b", 0: "", 1: "#", 2: "x"
-    }[(val - (val % 7)) // 7]
+    }[val // 7]
