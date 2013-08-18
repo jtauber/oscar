@@ -45,6 +45,8 @@ Or C Lydian:
 >>> print scale("C", modes.LYDIAN)
 ['C', 'D', 'E', 'F#', 'G', 'A', 'B']
 
+The modes are lists of circle-of-fifth intervals from the tonic:
+
 >>> modes.LYDIAN
 [0, 2, 4, 6, 1, 3, 5]
 
