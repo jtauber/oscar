@@ -11,3 +11,9 @@ def name(val):
     return "FCGDAEB"[val % 7] + {
         -2: "bb", -1: "b", 0: "", 1: "#", 2: "x"
     }[val // 7]
+
+
+def interval_name(val):
+    x = "dddddddmmmmPPPMMMMAAAAAAA"
+    y = "2637415263741526374152637"
+    return x[val + 12] + y[val + 12]

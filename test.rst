@@ -84,95 +84,96 @@ The modes are lists of circle-of-fifth intervals from the tonic:
 Intervals
 ---------
 
->>> def interval_above_C(pitch): return value(pitch) - value("C")
+>>> from pitch import interval_name
+>>> def interval_above_C(pitch): return value(pitch) - value("C"), interval_name(value(pitch) - value("C"))
 
 Perfect
 ~~~~~~~
 
 >>> interval_above_C("F")
--1
+(-1, 'P4')
 
 >>> interval_above_C("C")
-0
+(0, 'P1')
 
 >>> interval_above_C("G")
-1
+(1, 'P5')
 
 Major
 ~~~~~
 
 >>> interval_above_C("D")
-2
+(2, 'M2')
 
 >>> interval_above_C("A")
-3
+(3, 'M6')
 
 >>> interval_above_C("E")
-4
+(4, 'M3')
 
 >>> interval_above_C("B")
-5
+(5, 'M7')
 
 Minor
 ~~~~~
 
 >>> interval_above_C("Db")
--5
+(-5, 'm2')
 
 >>> interval_above_C("Ab")
--4
+(-4, 'm6')
 
 >>> interval_above_C("Eb")
--3
+(-3, 'm3')
 
 >>> interval_above_C("Bb")
--2
+(-2, 'm7')
 
 
 Augmented
 ~~~~~~~~~
 
 >>> interval_above_C("F#")
-6
+(6, 'A4')
 
 >>> interval_above_C("C#")
-7
+(7, 'A1')
 
 >>> interval_above_C("G#")
-8
+(8, 'A5')
 
 >>> interval_above_C("D#")
-9
+(9, 'A2')
 
 >>> interval_above_C("A#")
-10
+(10, 'A6')
 
 >>> interval_above_C("E#")
-11
+(11, 'A3')
 
 >>> interval_above_C("B#")
-12
+(12, 'A7')
 
 Diminished
 ~~~~~~~~~~
 
 >>> interval_above_C("Dbb")
--12
+(-12, 'd2')
 
 >>> interval_above_C("Abb")
--11
+(-11, 'd6')
 
 >>> interval_above_C("Ebb")
--10
+(-10, 'd3')
 
 >>> interval_above_C("Bbb")
--9
+(-9, 'd7')
 
 >>> interval_above_C("Fb")
--8
+(-8, 'd4')
 
 >>> interval_above_C("Cb")
--7
+(-7, 'd1')
 
 >>> interval_above_C("Gb")
--6
+(-6, 'd5')
