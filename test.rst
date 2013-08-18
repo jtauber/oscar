@@ -20,6 +20,10 @@ Convert letter+modifer pitch to numerical value based on circle-of-fifths:
 -10
 >>> value("Gx")
 16
+>>> value("foo")
+Traceback (most recent call last):
+    ....
+ValueError
 
 Convert circle-of-fifths-based numerical pitch to letter+modifier string:
 
